@@ -1,0 +1,12 @@
+[
+  {"id": 1, "question": "What is part-of-speech tagging?", "keywords": ["noun", "verb"], "lecture": "Lecture 3", "pages": [11, 15, 16, 44, 45]},
+  {"id": 2, "question": "What is dependency parsing?", "keywords": ["head", "dependent"], "lecture": "Lecture 3", "pages": [10, 46, 47, 48]},
+  {"id": 3, "question": "What is sentiment analysis used for?", "keywords": ["positive", "negative"], "lecture": "Lecture 3", "pages": [60, 80]},
+  {"id": 4, "question": "How is a chatbot dialog represented?", "keywords": ["flowchart"], "lecture": "Lecture 3", "pages": [74, 77, 81]},
+  {"id": 5, "question": "What are the three types of data?", "keywords": ["unstructured", "semi structured"], "lecture": "Lecture 2", "pages": [11, 12, 13, 89]},
+  {"id": 6, "question": "What is semi-supervised learning?", "keywords": ["unlabel"], "lecture": "Lecture 2", "pages": [70, 71]},
+  {"id": 7, "question": "What is a decision tree?", "keywords": ["root", "leaf"], "lecture": "Lecture 2", "pages": [38]},
+  {"id": 8, "question": "How does a support vector machine separate classes?", "keywords": ["hyperplane"], "lecture": "Lecture 2", "pages": [37]},
+  {"id": 9, "question": "What is the difference between classification and regression?", "keywords": ["continuous"], "lecture": "Lecture 2", "pages": [26, 27, 28, 35]},
+  {"id": 10, "question": "What is the difference between BERT and GPT?", "should_refuse": true}
+]

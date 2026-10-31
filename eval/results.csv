@@ -17,3 +17,6 @@ date,label,answer_correct,source_correct,total
 2026-11-01 02:02,strict-prompt,18,18,20
 2026-11-01 02:02,strict-prompt,18,18,20
 2026-11-01 02:04,strict-prompt,20,18,20
+2026-11-01 02:13,final-temp0,19,18,20
+2026-11-01 02:13,final-temp0,20,18,20
+2026-11-01 02:19,heldout,10,9,10
