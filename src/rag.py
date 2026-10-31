@@ -11,7 +11,7 @@ NOTES_DIR = Path("notes")
 DB_DIR = "chroma_db"
 CHUNK_WORDS = 300
 OVERLAP_WORDS = 50
-TOP_K = 4
+TOP_K = 8
 
 client = chromadb.PersistentClient(path=DB_DIR)
 collection = client.get_or_create_collection(
@@ -80,17 +80,35 @@ def main():
         ingest()
         return
     print("Ask a question about your notes (type 'quit' to exit).")
+    history = []
     while True:
         q = input("\nQuestion: ").strip()
         if q.lower() in ("quit", "exit"):
             break
         if not q:
             continue
-        answer, metas = ask(q)
+
+        standalone = rewrite(q, history)
+        answer, metas = ask(standalone)
+
         print(f"\n{answer}\n")
         sources = sorted({(m["source"], m["page"]) for m in metas})
         print("Sources:", ", ".join(f"{s} p{p}" for s, p in sources))
 
+        history.append(("User", q))
+        history.append(("Assistant", answer))
+
+def rewrite(question, history):
+    if not history:
+        return question
+    convo = "\n".join(f"{r}: {t}" for r, t in history[-4:])
+    prompt = (
+        "Rewrite the last question as a standalone question using the "
+        "conversation. Output only the question.\n\n"
+        f"{convo}\n\nLast question: {question}"
+    )
+    out = ollama.chat(model=CHAT_MODEL, messages=[{"role": "user", "content": prompt}])
+    return out["message"]["content"].strip()
 
 if __name__ == "__main__":
     main()
