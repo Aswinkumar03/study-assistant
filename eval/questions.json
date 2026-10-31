@@ -1,0 +1,22 @@
+[
+  {"id": 1, "question": "What is natural language processing (NLP)?", "keywords": ["human language"], "lecture": "Lecture 3", "pages": [4, 5]},
+  {"id": 2, "question": "What is the difference between stemming and lemmatization?", "keywords": ["dictionary"], "lecture": "Lecture 3", "pages": [24, 25]},
+  {"id": 3, "question": "What does TF-IDF measure?", "keywords": ["relevant"], "lecture": "Lecture 3", "pages": [33]},
+  {"id": 4, "question": "How is GloVe different from Word2Vec?", "keywords": ["global", "local"], "lecture": "Lecture 3", "pages": [36, 38]},
+  {"id": 5, "question": "What are the three parts of a chatbot backend?", "keywords": ["intents", "entities", "dialog"], "lecture": "Lecture 3", "pages": [74, 81]},
+  {"id": 6, "question": "What is named entity recognition (NER)?", "keywords": ["organi", "location"], "lecture": "Lecture 3", "pages": [49, 51]},
+  {"id": 7, "question": "What are the challenges of NLP?", "keywords": ["ambiguity", "bias"], "lecture": "Lecture 3", "pages": [66, 67, 68]},
+  {"id": 8, "question": "What is the difference between NLU and NLG?", "keywords": ["understand", "generat"], "lecture": "Lecture 3", "pages": [55, 56, 57, 58]},
+  {"id": 9, "question": "Give me all the algorithms that are used for classification", "keywords": ["naive bayes", "support vector", "decision tree", "nearest neighbo", "random forest", "logistic"], "lecture": "Lecture 2", "pages": [36, 37, 38, 39, 40, 43]},
+  {"id": 10, "question": "Which algorithms are used for regression?", "keywords": ["linear", "polynomial"], "lecture": "Lecture 2", "pages": [41, 44]},
+  {"id": 11, "question": "What is the difference between supervised and unsupervised learning?", "keywords": ["label", "cluster"], "lecture": "Lecture 2", "pages": [23, 55, 78]},
+  {"id": 12, "question": "What is the difference between binary and multiclass classification?", "keywords": ["two", "more than two"], "lecture": "Lecture 2", "pages": [32, 33]},
+  {"id": 13, "question": "What four values make up a confusion matrix?", "keywords": ["true positive", "false positive", "true negative", "false negative"], "lecture": "Lecture 2", "pages": [51]},
+  {"id": 14, "question": "How does K-means clustering work?", "keywords": ["centroid"], "lecture": "Lecture 2", "pages": [65]},
+  {"id": 15, "question": "What is the difference between agglomerative and divisive clustering?", "keywords": ["bottom", "top"], "lecture": "Lecture 2", "pages": [67]},
+  {"id": 16, "question": "How does reinforcement learning learn?", "keywords": ["trial and error"], "lecture": "Lecture 2", "pages": [74, 75]},
+  {"id": 17, "question": "What are the limitations of machine learning?", "keywords": ["data acquisition", "data quality"], "lecture": "Lecture 2", "pages": [86, 87]},
+  {"id": 18, "question": "What are the three key aspects used to define machine learning (task, experience and performance)?", "keywords": ["task", "experience", "performance"], "lecture": "Lecture 2", "pages": [84, 85]},
+  {"id": 19, "question": "How do I build a REST API in Node.js?", "should_refuse": true},
+  {"id": 20, "question": "How does the backpropagation algorithm update weights?", "should_refuse": true}
+]

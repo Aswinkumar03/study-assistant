@@ -11,7 +11,7 @@ NOTES_DIR = Path("notes")
 DB_DIR = "chroma_db"
 CHUNK_WORDS = 300
 OVERLAP_WORDS = 50
-TOP_K = 8
+TOP_K = 16
 
 client = chromadb.PersistentClient(path=DB_DIR)
 collection = client.get_or_create_collection(
@@ -62,7 +62,9 @@ def ask(question):
     )
     system = (
         "You are a study assistant. Answer using ONLY the context provided. "
-        "If the answer is not in the context, say you don't know based on the notes."
+    "If the question asks for a list, include EVERY relevant item that "
+    "appears anywhere in the context and do not skip any. "
+    "If the answer is not in the context, say you don't know based on the notes."
     )
     user = f"Context:\n{context}\n\nQuestion: {question}"
     reply = ollama.chat(
